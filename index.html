@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;700&display=swap" rel="stylesheet"> 
+
+    <script src="https://kit.fontawesome.com/1ac055b19e.js" crossorigin="anonymous"></script>
+
+    <title>Todo List</title>
+</head>
+<body>
+    
+
+    <header class="header">
+        <h1>Yesmine's Todo List</h1>
+    </header>
+
+    <div class="todo-container">
+        <form>
+            <div class="form-group">
+                <input class="todo-input" type="text" placeholder="todo" autofocus>
+                <button class="todo-btn">
+                    <i class="fas fa-plus-square"></i>
+                </button>
+            </div>
+            <div class="wrapper-select">
+                <select id="select" class="filter-todo">
+                    <option selected value="all">All</option>
+                    <option value="incomplete">Incomplete</option>
+                    <option value="completed">Complete</option>
+                </select>
+            </div>
+        </form>
+        <ul class="todo-list">
+        </ul>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
